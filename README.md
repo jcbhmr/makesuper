@@ -7,30 +7,31 @@
 ```
 .
 ├── LINUX-X86_64/
-│   └── cc
+│   └── myapp
 ├── LINUX-AARCH64/
-│   └── cc
+│   └── myapp
 ├── XNU-X86_64/
-│   └── cc
+│   └── myapp
 ├── XNU-AARCH64/
-│   └── cc
+│   └── myapp
 ├── WINDOWS-X86_64/
-│   └── cc.exe
-└── makesuper.txt
+│   └── myapp.exe
+└── superapp.txt
 ```
 
-<div><code>makesuper.txt</code></div>
+<div><code>superapp.txt</code></div>
 
 ```
-supercc
-LINUX-X86_64   cc
-LINUX-AARCH64  cc
-XNU-X86_64     cc
-XNU-AARCH64    cc
-WINDOWS-X86_64 cc
+myapp
+LINUX-X86_64   myapp
+LINUX-AARCH64  myapp
+XNU-X86_64     myapp
+XNU-AARCH64    myapp
+WINDOWS-X86_64 myapp.exe
 ```
 
 ```
-cp superapp.com supercc
-zip -Ar supercc .
+cp superapp myapp
+cd zip
+zip -Ar ../myapp .
 ```
